@@ -13,15 +13,17 @@ Berikut adalah Aplikasi untuk UTS Java Programming. Topik aplikasi yang saya amb
 
 Aplikasi dibuat dengan coding manual dan tidak memakai fxml untuk desain letak menu.
 
-Semua komponen UI rata-rata memakai pengaturan peletakkan koordinat x,y menggunakan integer.
+Semua komponen UI rata-rata memakai pengaturan peletakkan koordinat x,y menggunakan integer, pewarnaan komponen UI menggunakan file stylesheet CSS.
 
 Database digunakan karena terdapat banyak kendala menggunakan array untuk metode store data , akses index array yang masih gagal jika data ingin di-add secara terurut pada observeablearraylist.
 
 Di dalam aplikasi terdapat 7 menu yaitu beranda, add member, Detail member, Tambah Buku, List Buku, Pengembalian(masih terdapat bug) dan Peminjaman.
 
-Untuk pop-up Peminjaman masih ter-embed ke dalam panel aplikasi dan tidak menggunakan stage dan scene terpisah.
+Untuk pop-up menu Peminjaman masih ter-embed ke dalam panel aplikasi dan tidak menggunakan stage dan scene terpisah.
 
 Untuk mengkases aplikasi, kredensial default yang dipakai dan yang ter hardcode adalah admin:admin dan tidak case sensitive, untuk form password masih belum terdapat input sanitation / belum diimplementasikan, tetapi untuk input validation, sudah terintegrasi dan dapat mengecek apakah kredensial salah / tidak.
+
+Aplikasi hanya bisa dijalankan di dalam IDE dan tidak ada file .exe standalone.
 
 Aplikasi akan berjalan jika koneksi ke sql sukses, jika tidak maka akan di keluarkan output gagal pada console IDE. Setiap koneksi yang dibuat terdapat fungsi untuk menutup koneksi yang lama tidak terpakai  agar menghindari deadlock pada Database dan operasi database selanjutnya dapat dilakukan(di-eksekusi tidak secara simultan/batch melainkan satu-satu). Disamping itu, agar tidak menyulitkan pembuatan tabel dalam DB( kecuali untuk tabel User yang sudha dibuat & di hardcode terlebih dahulu oleh pembuat aplikasi), maka terdapat operasi CREATE TABLE dengan nama fungsi sql.setuptabelbuku(), sql.setuptabelmember(), sql.setuptabelpinjam() yang dimana dapat di-instantiasi dari fungsi SqlConnection().
 
