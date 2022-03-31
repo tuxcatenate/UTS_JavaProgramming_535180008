@@ -1,4 +1,5 @@
 # UTS_JavaProgramming_535180008
+Nama / NIM : Devid Sumarlie / 535180008
  Repository Tugas UTS Java
  
 Berikut adalah Aplikasi untuk UTS Java Programming. Topik aplikasi yang saya ambil adalah Library Management System(LMS) menggunakan JavaFX. LMS ini diepruntukkan untuk administrator perpustakaan, sehingga user role yang ada di dalam aplikasi hanya terbatas pada administrator yang menggunakan/memakainya. 
@@ -8,7 +9,7 @@ Berikut adalah Aplikasi untuk UTS Java Programming. Topik aplikasi yang saya amb
 - Java JDK versi 11
 - SqLite JDBC 3.27.2.1 (Jar SqLite dapat diunduh di [Maven Repo](https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/3.27.2.1/) dan di-include kan ke dalam pengaturan library pada masing-masing IDE yang dipakai. Pada project ini tidak dipakai pom.xml dari maven.
 - Openjfx dengan versi openjfx-11.0.2_windows-x64_bin-sdk( harus ter-include dalam pengaturan lib pada IDE, atau bisa juga dijalankan dengan java jdk versi 8).
-- -DBeaver untuk pengolahan file .sqlite
+- DBeaver untuk pengolahan file .sqlite
 
 Aplikasi dibuat dengan coding manual dan tidak memakai fxml untuk desain letak menu.
 
