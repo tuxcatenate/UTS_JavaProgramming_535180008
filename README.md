@@ -13,7 +13,7 @@ Berikut adalah Aplikasi untuk UTS Java Programming. Topik aplikasi yang saya amb
 
 Aplikasi dibuat dengan coding manual dan tidak memakai fxml untuk desain letak menu.
 
-Semua komponen UI rata-rata memakai pengaturan peletakkan koordinat x,y menggunakan integer, pewarnaan komponen UI menggunakan file stylesheet CSS.
+Semua komponen UI rata-rata memakai pengaturan peletakkan koordinat x,y menggunakan integer, yang dimana kelemahannya adalah bisa mengorbankan modularitas dan fleksibilitas untuk mengatur letak komponen UI secara leluasa, terlebih lagi jika dibandingkan dengan pengaturan memalui FXML yang lebih mudah. Styling komponen UI menggunakan file stylesheet CSS.
 
 Database digunakan karena terdapat banyak kendala menggunakan array untuk metode store data , akses index array yang masih gagal jika data ingin di-add secara terurut pada observeablearraylist.
 
